@@ -1,0 +1,19 @@
+<body>
+    <div class="form-container">
+        <h2>ADMIN LOGIN</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <input type="text" placeholder="Username" name="username" [(ngModel)]="username" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="login-btn" (click)="checkLogin()">LOGIN</button>
+                <button type="reset" class="reset-btn" routerLink="/home">RESET</button>
+            </div>
+        </form>
+    </div>
+</body>

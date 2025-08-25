@@ -1,0 +1,91 @@
+
+
+
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #003333, #001f33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 350px;
+  background: transparent;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.form-container h2 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 45px 12px 45px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+}
+
+.form-container button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container .login-btn {
+  background: white;
+  color: #001f33;
+}
+
+.form-container .login-btn:hover {
+  background: #ddd;
+}
+
+.form-container .reset-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.form-container .reset-btn:hover {
+  background: #cc0000;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}

@@ -1,0 +1,31 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+
+  <a style="color: white;" class="navbar-brand" href="#">AIG HOSPITALS</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a style="color: white;" class="nav-link active" aria-current="page" href="javascript:void(0);"
+          routerLink="/view-medicine">Back</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <hr>
+  <h2 class="text-center">Add the Medicine</h2>
+  <hr>
+  <form (ngSubmit)="onSubmit()" class="form-group">
+    <label for="drug">Drug</label>
+    <input type="text" placeholder="Enter the Drug" name="drug" id="drug" [(ngModel)]="medicines.drugName"
+      class="form-control">
+    <label for="stock">Stock</label>
+    <input type="number" placeholder="Enter the Avaliable Stock" name="stock" id="stock" [(ngModel)]="medicines.stock"
+      class="form-control"><br>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
