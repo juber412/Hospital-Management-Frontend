@@ -12,14 +12,16 @@ export class AdminloginComponent {
 
   username: string = "";
   password: string = "";
+  message: string = "";
+  user: any = null;
   invalidCredentials = false;
 
-  constructor(private router: Router, private adminAuth: AdminAuthService) { }
+  constructor(private router: Router, private adminAuthService: AdminAuthService) { }
 
 
   checkLogin() {
 
-    if (this.adminAuth.authenticate(this.username, this.password)) {
+    if (this.adminAuthService.authenticate(this.username, this.password)) {
       this.router.navigate(['admin']);
       this.invalidCredentials = false;
     }
